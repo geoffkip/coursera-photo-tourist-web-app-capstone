@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <h1>Cities</h1>
+    <span>(from spa-app/resources/resources.html)</span>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input name="name"
+                 class="form-control"
+                 ng-model="res.city.name"
+                 required="required"/>
+          <button ng-if="!res.city.id"
+                  type="submit"
+                  class="btn btn-success"
+                  ng-click="res.create()">Create City</button>
+        </div>
+
+        <div class="row">
+          <div ng-if="res.city.id"
+               class="buttons">
+            <button type="submit"
+                    class="btn btn-warning"
+                    ng-click="res.update()">Update City</button>
+            <button type="submit"
+                    class="btn btn-danger"
+                    ng-click="res.remove()">Delete City</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item"
+            ng-repeat="city in res.cities | orderBy:'name'">
+          <a  ng-click="res.edit(city)">{{city.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
