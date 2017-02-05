@@ -1,10 +1,8 @@
-Assignment: Module #1 - Core API Development and Deployment
+#Assignment: Module #1 - Core API Development and Deployment
 
+##Objectives
 
-Objective
-
-
-By the end of this assignment, you will be able to:
+###By the end of this assignment, you will be able to:
 
 • Instantiate a Rails server application primarily for API use
 • Configure the application for use with RDBMS and MongoDB
@@ -14,8 +12,7 @@ By the end of this assignment, you will be able to:
 • Implement an end-to-end resource thread backed by MongoDB/Mongoid
 • Enable/require HTTPS for staging and production sites
 
-Requirements (180 mins)
-
+##Requirements (180 mins)
 
 I have created an honest estimated of 180 mins for this assignment based on your development environment being in
 place and giving you time to poke through some of the related documentation to the deployments.
@@ -67,20 +64,19 @@ Cities.
 • The resource must be backed by MongoDB using Mongoid
 • The resource will be deployed with a state with the name Maryland
 • A client performing a GET of of the /api/states resource must at least get one state with name Maryland
-
+      
 9. (10 min) Configure your staging and production sites to require HTTPS for web communications
 
 Note: (Optional) You may want to enable only the GET methods for the API interface to avoid anyone coming in and
 deleting or updating your city and state from what it is required to produce.
 
-Submission
-
+##Submission
 
 Submit for grading
 
 1. URLs to the staging and production deployments to be used via demonstration by the reviewer.
 2. Link from a public Git repository for the to branches deployed. This will be used for code inspection by the
-reviewer.
+  reviewer.
 3. Required git output to show
 • Remotes and their URLs for source code (e.g., origin), staging, and production
 • Remote branches for staging and production
