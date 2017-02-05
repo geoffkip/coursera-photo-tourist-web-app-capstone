@@ -1,27 +1,27 @@
 #Assignment: Module #2 - SPA Development and Deployment
 
-####Objective
+##Objectives
 
-##By the end of this assignment, you will be able to:
+###By the end of this assignment, you will be able to:
 
-###Develop an AngularJS Application
+####Develop an AngularJS Application
 • Create a Single Page Application (SPA) based on AngularJS (1.x)
 • Package a SPA with necessary external javascript and CSS libraries
 • Define a SPA to be the default page for a Rails server (either internal or thru a re-direct)
 
-###Provide Web-based Resource Access to a Resource Hosted on Rails
+####Provide Web-based Resource Access to a Resource Hosted on Rails
 • Build a page that provides CRUD actions for a back-end resource
 • Implement a service in AngularJS to interact with a server-side resource through a JSON API
 • Implement an HTML form suitable for CRUD actions for a resource
 • Implement a controller in AngularJS to supply a view-model to the page with data and callbacks for page events
 • Encapsulate the management of a resource within an isolated scope
 
-###Deploy an AngularJS Application
+####Deploy an AngularJS Application
 • Make the SPA accessible to the user through a public Internet URL
 • Provide web access to a resource served by a Rails server, from module 1, on the Internet
 • Deploy a packaging of the SPA optimized for production
 
-####Requirements (150 min)
+##Requirements (150 min)
 
 The time estimates below are based on use of the Asset Pipeline as the development option. It does not include the
 development of any external development environments if that path is chosen.
@@ -61,9 +61,7 @@ development of any external development environments if that path is chosen.
 5. (15 min) Configure the Root URL (/) of your Rails server to either host or re-direct the caller to your SPA
   application.
 
-
-###Grading
-
+##Grading
 
 1. Supply the base, public URL of your Rails server that hosts your solution for this assignment.
 • (5 pts) Did the submission provide you a base URL (e.g., ...herokuapp.com/) and not the URL to a
