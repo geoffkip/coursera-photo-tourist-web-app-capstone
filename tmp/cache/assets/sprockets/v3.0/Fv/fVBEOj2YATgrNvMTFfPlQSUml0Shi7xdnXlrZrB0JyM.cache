@@ -1,0 +1,35 @@
+{:uriI"àfile://app/assets/javascripts/spa-demo/foos/foos.html?type=text/html&id=e4ee51e44140f988c8c246dabb720dc47d36c7bc8095fbb7342b0646477d891c:ET:load_pathI"app/assets/javascripts;T:filenameI"3app/assets/javascripts/spa-demo/foos/foos.html;T:	nameI"spa-demo/foos/foos;T:logical_pathI"spa-demo/foos/foos.html;T:content_typeI"text/html;T:sourceI"<div>
+  <h3>Foos</h3>
+  <span>(from spa-demo/foos/foos.html)</span>
+
+  <form>
+    <div>
+      <label>Name:</label>
+      <input name="name"
+              ng-model="foosVM.foo.name"
+              required="required"/>
+    </div>
+
+    <button ng-if="!foosVM.foo.id" 
+             type="submit"
+             ng-disabled="!foosVM.foo.name"
+             ng-click="foosVM.create()">Create Foo</button>  
+    <div ng-if="foosVM.foo.id">
+      <button type="submit"
+              ng-click="foosVM.update()">Update Foo</button>
+      <button type="submit"
+              ng-click="foosVM.remove()">Delete Foo</button>
+    </div>               
+    </form>
+
+  <ul>
+    <li ng-repeat="foo in foosVM.foos | orderBy:'name'">
+      <a ng-click="foosVM.edit(foo)">{{foo.name}}</a>
+    </li>
+  </ul>
+
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Afile-digest://app/assets/javascripts/spa-demo/foos/foos.html;TTF:charsetI"
+utf-8;F:digest"%Â€`Yîçå.ﬂ_ø®éd…íyˇ∫®dÅ÷Ùs‰å:lengthi:dependencies_digest"%÷gC≠¢„eúm˛ê7~èï]˛ªKÕ#vi9CÊ„êé:idI"Ee4ee51e44140f988c8c246dabb720dc47d36c7bc8095fbb7342b0646477d891c;F:
+mtimel+«†X
