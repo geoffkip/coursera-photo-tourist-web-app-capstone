@@ -1584,3 +1584,23 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+
+
+Started GET "/" for ::1 at 2017-02-15 23:32:26 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (6.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (15146.8ms)
+Completed 200 OK in 15405ms (Views: 15403.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-29589d4afefb11bafe50fbee2f2af016d34a2ac48e656495412bb4c5df2a3f08.js?body=1" for ::1 at 2017-02-15 23:32:47 +0530
+
+
+Started GET "/assets/spa-demo/foos/foos-e5db6059948d0f8c172edf5fbf02a88e64c99279ffbaa86481d6f473e40e8c1c.html" for ::1 at 2017-02-15 23:32:49 +0530
+
+
+Started GET "/api/foos" for ::1 at 2017-02-15 23:32:49 +0530
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (4.0ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/index.json.jbuilder (53.0ms)
+Completed 200 OK in 197ms (Views: 175.1ms | ActiveRecord: 7.0ms)
